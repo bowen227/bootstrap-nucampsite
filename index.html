@@ -18,11 +18,12 @@
 
 <body>
 
+    <a role="button" class="sr-only" href="#main">Skip to Main</a>
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid" />
+                    <img src="img/logo.png" class="img-fluid" alt="NuCamp Logo" />
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
@@ -43,9 +44,9 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav role="navigation" class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" alt="NuCamp logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -102,7 +103,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <main id="main" class="container">
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
                 <div id="homeCarousel" class="carousel slide" data-ride="carousel">
@@ -202,7 +203,7 @@
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row form-group">
-                                <label class="col-sm-6 col-form-label">Number of Campers</label>
+                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
                                 <div class="col">
                                     <select id="numCampers" name="numCampers" class="form-control">
                                         <option>Select</option>
@@ -216,12 +217,12 @@
                                 </div>
                             </div>
                             <div class="row form-group">
-                                <label class="col-sm-6 col-form-label">Date</label>
+                                <label class="col-sm-6 col-form-label" for="date">Date</label>
                                 <div class="col">
                                     <input id="date" class="form-control" type="date" name="date" placeholder="Date" />
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row form-group">
                                 <div class="col">
                                     <button class="btn btn-primary" type="submit">Search</button>
                                 </div>
@@ -231,11 +232,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer class="site-footer">
         <div class="container">
-            <div class="row row-content align-items-center">
+            <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
@@ -253,8 +254,8 @@
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <a roll="button" class="btn btn-link" href="tel: 12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
-                    <a roll="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    <a role="button" class="btn btn-link" href="tel: 12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
             </div>
         </div>
