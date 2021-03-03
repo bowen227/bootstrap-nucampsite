@@ -30,7 +30,6 @@ header h2 {
 
 .jumbotron {
     padding: 30px;
-    /* background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B); */
     background-image: linear-gradient(to right, #37dd90, #30a3c5, #101b6b);
     color: white;
 }
@@ -42,7 +41,6 @@ header h2 {
 }
 
 .navbar {
-    /* background-color: #901cad; */
     background-color: #1c3bad;
 }
 
@@ -66,11 +64,9 @@ a, a:hover {
 }
 
 .carousel {
-    /* border: solid #5637DD; */
     border: solid #1c3bad;
 }
 
-/* Remove below after code challenge */
 .overlay-container {
     position: relative;
     min-width: 315px;
