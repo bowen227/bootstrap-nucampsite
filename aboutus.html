@@ -15,11 +15,13 @@
   <title>NuCamp: A Better Way To Camp</title>
 </head>
 <body>
+  
+  <a role="button" class="sr-only" href="#main">Skip to Main</a>
   <header class="jumbotron jumbotron-fluid">
     <div class="container">
       <div class="row">
         <div class="col-4 col-sm-3 col-md-2 align-self-center">
-          <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
+          <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="NuCamp logo" /></a>
         </div>
         <div class="col">
           <h1>NuCamp</h1>
@@ -29,9 +31,9 @@
     </div>
   </header>
 
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+  <nav role="navigation" class="navbar navbar-expand-sm navbar-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" alt="NuCamp logo" /></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,7 +48,7 @@
     </div>
   </nav>
 
-  <div class="container">
+  <main id="main" class="container">
     <div class="row">
         <div class="col-12">
           <ol class="breadcrumb">
@@ -203,7 +205,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <footer class="site-footer">
     <div class="container">
